@@ -9,6 +9,7 @@ class NovaVisita extends StatelessWidget {
         .of(context)
         .size
         .width * 0.64;
-    return CupertinoDatePicker();
+    return ;
   }
 }
+
