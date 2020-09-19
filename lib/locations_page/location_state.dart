@@ -10,7 +10,7 @@ class Locations extends StatelessWidget {
         drawer: DrawerNavegacao(),
         floatingActionButton: new FloatingActionButton(
           child: Icon(Icons.add),
-          backgroundColor: Color.fromRGBO(31, 150, 159, 1),
+          backgroundColor: Colors.orange
         ),
         body: Padding(
           padding: EdgeInsets.all(20.0),
@@ -55,7 +55,7 @@ class Locations extends StatelessWidget {
                                   Padding(
                                     padding: EdgeInsets.only(left: 35.0),
                                     child: Text(
-                                      "Lotação máxima 20 pessoas",
+                                      "5 de 10 imóveis alugados",
                                       style: TextStyle(color: Colors.black38),
                                     ),
                                   ),

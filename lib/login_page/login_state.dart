@@ -86,7 +86,9 @@ class _LoginState extends State<LoginState> {
     return Scaffold(body: Center(
         child: SingleChildScrollView(
           child: Container(
-            color: Colors.orange,
+            decoration: BoxDecoration(
+              gradient: (LinearGradient(colors: [Colors.deepOrange, Colors.orange])),
+            ),
             padding: const EdgeInsets.fromLTRB(40, 160, 40, 165),
             child: Column( children: <Widget>[
               SizedBox(height: 150.0,

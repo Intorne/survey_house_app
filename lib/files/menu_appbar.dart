@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:survey_house_app/calendar_page/calendar_state.dart';
 import 'package:survey_house_app/locations_page/location_state.dart';
+import 'package:survey_house_app/login_page/login_state.dart';
+import 'package:survey_house_app/reports_page/report_state.dart';
+import 'package:survey_house_app/surveys_page/survey_state.dart';
+import 'package:survey_house_app/warnings_page/warning_state.dart';
 
 class SurveyAppBar extends AppBar {
   SurveyAppBar({Key key, Widget title})
@@ -33,7 +38,7 @@ class DrawerNavegacao extends StatelessWidget {
           DrawerHeader(
             child: Image.asset("imagens/logoPB.png"),
             decoration: BoxDecoration(
-                color: Colors.orange
+                gradient: (LinearGradient(colors: [Colors.deepOrange, Colors.orange])),
             ),
           ),
           ListTile(
@@ -41,28 +46,37 @@ class DrawerNavegacao extends StatelessWidget {
               Icon(Icons.calendar_today),
               Text("Calendário"),
             ],),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context,
+              MaterialPageRoute(builder: (context) => Calendar()));
+            },
           ),
           ListTile(
               title: Row(children: [
                 Icon(Icons.announcement),
                 Text("Avisos"),
               ],),
-              onTap: () {}
+              onTap: () {},
           ),
           ListTile(
               title: Row(children: [
                 Icon(Icons.assignment),
                 Text("Relatórios"),
               ],),
-              onTap: () {}
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Relatorios()));
+              },
           ),
           ListTile(
               title: Row(children: [
                 Icon(Icons.search),
                 Text("Vistorias"),
               ],),
-              onTap: () {}
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Vistorias()));
+              },
           ),
           ListTile(
               title: Row(children: [
@@ -79,7 +93,10 @@ class DrawerNavegacao extends StatelessWidget {
                 Icon(Icons.exit_to_app),
                 Text("Sair"),
               ],),
-              onTap: () {}
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => LoginState()));
+              }
           ),
         ],
       ),
