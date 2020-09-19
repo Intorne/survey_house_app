@@ -59,7 +59,7 @@ class _LoginState extends State<LoginState> {
             .of(context)
             .size
             .width,
-        padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+        padding: EdgeInsets.all(15),
         child: RaisedButton(
             color: Colors.black,
             child: Text("Entrar", textAlign: TextAlign.center,
@@ -87,7 +87,7 @@ class _LoginState extends State<LoginState> {
         child: SingleChildScrollView(
           child: Container(
             color: Colors.orange,
-            padding: const EdgeInsets.fromLTRB(40, 160, 40, 200),
+            padding: const EdgeInsets.fromLTRB(40, 160, 40, 165),
             child: Column( children: <Widget>[
               SizedBox(height: 150.0,
                 child: Image.asset(
@@ -96,7 +96,7 @@ class _LoginState extends State<LoginState> {
               SizedBox(height: 40.0), emailField,
               SizedBox(height: 20.0), passwordField,
               SizedBox(height: 30.0), buttonLogin,
-              SizedBox(height: 30.0), buttonText,
+              SizedBox(height: 20.0), buttonText,
               ],
             )
           ),
