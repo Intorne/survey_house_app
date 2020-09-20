@@ -1,5 +1,6 @@
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_calendar_week/calendar_week.dart';
 
 class NovaVisita extends StatelessWidget {
@@ -9,7 +10,7 @@ class NovaVisita extends StatelessWidget {
         .of(context)
         .size
         .width * 0.64;
-    return ;
+    return Scaffold();
   }
 }
 
