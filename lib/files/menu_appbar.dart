@@ -67,7 +67,10 @@ class DrawerNavegacao extends StatelessWidget {
                 Icon(Icons.announcement),
                 Text("Avisos"),
               ],),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Avisos()));
+              },
           ),
           ListTile(
               title: Row(children: [

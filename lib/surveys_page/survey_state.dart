@@ -10,7 +10,7 @@ class Vistorias extends StatelessWidget {
         drawer: DrawerNavegacao(),
         floatingActionButton: new FloatingActionButton(
           child: Icon(Icons.add),
-          backgroundColor: Color.fromRGBO(31, 150, 159, 1),
+          backgroundColor: Colors.deepOrange,
         ),
         body: Padding(
           padding: EdgeInsets.all(20.0),

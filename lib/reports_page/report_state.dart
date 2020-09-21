@@ -10,7 +10,7 @@ class Relatorios extends StatelessWidget {
         drawer: DrawerNavegacao(),
         floatingActionButton: new FloatingActionButton(
           child: Icon(Icons.add),
-          backgroundColor: Color.fromRGBO(31, 150, 159, 1),
+          backgroundColor: Colors.deepOrange,
         ),
         body: Padding(
           padding: EdgeInsets.all(20.0),
@@ -18,7 +18,7 @@ class Relatorios extends StatelessWidget {
             SliverList(
                 delegate: SliverChildListDelegate([
                   Text(
-                    "Locais",
+                    "Relatórios",
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                   Column(
@@ -41,7 +41,7 @@ class Relatorios extends StatelessWidget {
                                   Container(
                                     padding: EdgeInsets.only(left: 10.0),
                                     width: c_width,
-                                    child: Text("Jardim Flórida"),
+                                    child: Text("Laudo Vistoria Jardim Flórida"),
                                   ),
                                   IconButton(
                                     icon: Icon(Icons.edit),
@@ -55,7 +55,7 @@ class Relatorios extends StatelessWidget {
                                   Padding(
                                     padding: EdgeInsets.only(left: 35.0),
                                     child: Text(
-                                      "",
+                                      "Responsável: Arthur",
                                       style: TextStyle(color: Colors.black38),
                                     ),
                                   ),

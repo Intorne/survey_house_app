@@ -10,7 +10,7 @@ class Locations extends StatelessWidget {
         drawer: DrawerNavegacao(),
         floatingActionButton: new FloatingActionButton(
           child: Icon(Icons.add),
-          backgroundColor: Colors.orange
+          backgroundColor: Colors.deepOrange
         ),
         body: Padding(
           padding: EdgeInsets.all(20.0),
