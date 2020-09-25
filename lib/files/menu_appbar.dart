@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:survey_house_app/calendar_page/calendar_state.dart';
 import 'package:survey_house_app/home_page/home_state.dart';
 import 'package:survey_house_app/locations_page/location_state.dart';
+import 'package:survey_house_app/locations_page/map_page.dart';
 import 'package:survey_house_app/login_page/login_state.dart';
 import 'package:survey_house_app/reports_page/report_state.dart';
 import 'package:survey_house_app/surveys_page/survey_state.dart';
@@ -99,7 +100,7 @@ class DrawerNavegacao extends StatelessWidget {
               ],),
               onTap: () {
                 Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Locations()));
+                  MaterialPageRoute(builder: (context) => MapPage()));
               },
           ),
           ListTile(

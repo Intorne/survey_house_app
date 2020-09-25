@@ -19,6 +19,8 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  google_maps_flutter: ^0.5.25+1
+
   flutter_calendar_week:
     git:
       url: https://github.com/mduccc/flutter_calendar_week

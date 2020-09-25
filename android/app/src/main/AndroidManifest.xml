@@ -9,6 +9,9 @@
         android:name="io.flutter.app.FlutterApplication"
         android:label="survey_house_app"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCbbmn5E5otTK0gW00Z9N49TVADwnsGNy8"/>
+
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
