@@ -10,8 +10,8 @@ class MapPage extends StatefulWidget{
 class _MapPageState extends State<MapPage>{
   GoogleMapController mapController;
   Set<Marker> markers = new Set<Marker>();
-  double lat = -23.3176396;
-  double long = -45.983688;
+  double lat = -23.2995839;
+  double long = -45.9843718;
 
   void _onMapCreated (GoogleMapController controller){
     mapController = controller;

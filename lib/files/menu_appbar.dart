@@ -100,7 +100,7 @@ class DrawerNavegacao extends StatelessWidget {
               ],),
               onTap: () {
                 Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => MapPage()));
+                  MaterialPageRoute(builder: (context) => Locations()));
               },
           ),
           ListTile(

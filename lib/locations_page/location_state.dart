@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:survey_house_app/files/menu_appbar.dart';
+import 'package:survey_house_app/locations_page/map_page.dart';
 
 class Locations extends StatelessWidget {
   @override
@@ -46,7 +47,10 @@ class Locations extends StatelessWidget {
                                   IconButton(
                                     icon: Icon(Icons.edit),
                                     color: Colors.orange,
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.push(context,
+                                          MaterialPageRoute(builder: (context) => MapPage()));
+                                    },
                                   ),
                                 ],
                               ),
