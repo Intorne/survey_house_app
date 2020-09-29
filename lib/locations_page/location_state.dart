@@ -45,7 +45,7 @@ class Locations extends StatelessWidget {
                                     child: Text("Jardim Flórida"),
                                   ),
                                   IconButton(
-                                    icon: Icon(Icons.edit),
+                                    icon: Icon(Icons.map),
                                     color: Colors.orange,
                                     onPressed: () {
                                       Navigator.push(context,
